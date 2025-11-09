@@ -234,10 +234,16 @@ img {
   gap: 30px
 }
 
-.testimonials .card p:nth-child(2) {
+.testimonials .name-card p:nth-child(1) {
 margin-top: 30px;
 font-weight: bold;
 }
+.testimonials .card {
+  display: grid;
+  grid-template-rows: 1fr auto; 
+  height: 100%; 
+}
+
 
 /* PRICING */
 .pricing-grid {
@@ -360,7 +366,7 @@ font-weight: bold;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 30px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .footer .card {
@@ -454,6 +460,9 @@ font-weight: bold;
     margin-bottom: 10px;
     display: block;
     width: 100%;
+  }
+  .hero .hero-buttons:nth-last-child {
+    margin-bottom: 30px;
   }
 
   .testimonials .testimonials-heading {
